@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>リダイレクトページ</title>
+    <script>
+      function redirectToRandomForm() {
+        var forms = [
+          'https://docs.google.com/forms/d/e/1FAIpQLSdwNyFjusH_hHsXjUCK9DsQSrmRKjYnD7kb5ptOJ2F8l-Dh_A/viewform?usp=sf_link',
+          'https://docs.google.com/forms/d/e/1FAIpQLSeabw5qOmQFxJ3C3c1W4G6sMOzNdVZOGXsU7vXcVVGdJ_WyOQ/viewform?usp=sf_link',
+          'https://docs.google.com/forms/d/e/1FAIpQLSfJaF-oG-WPjh7763O4xDfnidVMmHg2xdRgBhYauRG88hP1VQ/viewform?usp=sf_link',
+	  'https://docs.google.com/forms/d/e/1FAIpQLSdO_y7ESgUElEbR_a0fA_KQoj8sTgo6i6hclok9QqoRoMuXCQ/viewform?usp=sf_link',
+          'https://docs.google.com/forms/d/e/1FAIpQLSc5JbZ2XpzyEmfhzcKoOk3o6xWgzTgaBAT4eEVH-f8WEWGocw/viewform?usp=sf_link',
+	  'https://docs.google.com/forms/d/e/1FAIpQLSd1pYkK140IuJTw6-EiKnkqI4lmIqns0zCQjjBFv2pYh_JFnw/viewform?usp=sf_link',
+	  'https://docs.google.com/forms/d/e/1FAIpQLSciL9IR016qomdb2z7y1Vx2XCiHf2jeiv7X6JpDYTmMe7Uzjw/viewform?usp=sf_link',
+	  'https://docs.google.com/forms/d/e/1FAIpQLScjluO-ab7MgN9bXGFmjI_Pewq129R7Lowa3bZu7tAnWRIIsA/viewform?usp=sf_link'
+        ];
+        var randomFormUrl = forms[Math.floor(Math.random() * forms.length)];
+        window.location.href = randomFormUrl;
+      }
+    </script>
+  </head>
+  <body onload="redirectToRandomForm();">
+    <p>次のセクションに移動しています...</p>
+  </body>
+</html>
